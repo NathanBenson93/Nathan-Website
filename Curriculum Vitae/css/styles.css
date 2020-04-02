@@ -1,0 +1,248 @@
+/* Navigation header CSS */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
+
+i,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+.nav_links a {
+  font-size: 25px;
+  font-weight: 900;
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #24252a;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: top;
+}
+.logoo {
+  margin-left: 3%;
+  height: 100px;
+  width: 100px;
+  padding: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.logoo:hover {
+  height: 150px;
+  width: 150px;
+}
+.work {
+  list-style: none;
+}
+
+.work li {
+  padding: 10px;
+}
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: #0088a9;
+}
+
+button {
+  padding: 15px 15px;
+  background-color: rgba(0, 136, 169, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  width: 200px;
+}
+
+.cta {
+  margin-right: 3%;
+}
+button:hover {
+  background-color: rgba(0, 136, 169, 1);
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav_links li {
+    display: block;
+  }
+}
+
+/* Body CSS */
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.main {
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40%;
+  background-image: linear-gradient(#f48a05, #f0cf09, #ffff00, #ffff66);
+}
+
+article {
+  min-height: 100vh;
+  width: 60%;
+  margin: 100px 15% 0 5%;
+}
+
+/* Aside Css */
+.logo {
+  height: 200px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  border-radius: 50%;
+}
+
+h3 {
+  text-align: center;
+  background: #0c0032;
+  color: #ffff00;
+  padding: 10px 0 10px 0;
+}
+.aside_span {
+  padding: 0 10% 0 10%;
+}
+
+.hobbies {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  list-style: none;
+}
+i {
+  color: black;
+}
+
+/*  Article CSS  */
+
+section {
+  margin-bottom: 100px;
+}
+
+h1 {
+  font-size: 50px;
+}
+span {
+  margin: 0;
+  padding: 0;
+}
+
+.nathan {
+  margin: 0;
+  padding: 0;
+  color: #f0cf09;
+}
+
+.free {
+  padding: 0;
+  border-bottom: solid #f0cf09;
+}
+
+#icon {
+  padding-right: 15px;
+  color: gold;
+}
+
+#circle {
+  color: gold;
+  padding: 0 15px 20px 0;
+}
+
+hr {
+  height: 2px;
+  background-color: gold;
+  border-radius: 5px;
+  margin: -20px;
+}
+div {
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.container_div {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  flex-basis: 1;
+  width: 100%;
+}
+
+p {
+  margin-top: 0;
+}
+
+h5 {
+  display: inline;
+  font-size: 15px;
+}
+h6 {
+  display: inline;
+  margin: 5px;
+}
+
+.date {
+  text-align: left;
+  margin-right: 10%;
+  height: 100%;
+  min-width: 200px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+  aside {
+    width: 100%;
+    order: 2;
+  }
+
+  article {
+    width: 100%;
+    order: 1;
+  }
+}
