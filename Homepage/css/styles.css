@@ -65,6 +65,7 @@ header {
   width: 100%;
   margin: 0;
   padding: 0;
+  height: 130px;
 }
 .logo {
   margin-left: 3%;
@@ -204,6 +205,8 @@ h3 {
 }
 
 @media only screen and (max-width: 768px) {
+
+  
   header {
     justify-content: space-around;
   }
@@ -228,6 +231,7 @@ h3 {
 
   .social_media {
     width: 100%;
+    border: none;
   }
 }
 
