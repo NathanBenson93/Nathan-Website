@@ -1,6 +1,13 @@
 
 @import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Passion+One|Yeseva+One&display=swap");
-
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 0;
+  text-align: center;
+}
 /* navigation css */
 i,
 a,
@@ -28,6 +35,7 @@ header {
   margin: 0;
   padding: 0;
   position: top;
+  height: 130px;
 }
 .logo {
   margin-left: 3%;
@@ -55,6 +63,7 @@ header {
 .nav_links li {
   display: inline-block;
   padding: 0 10px;
+  
 }
 
 .nav_links li a {
@@ -115,4 +124,33 @@ section{
 
   height: 100%;
   width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    justify-content: space-around;
+  }
+  
+
+  .nav_links a {
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .work {
+    margin-right: 5px;
+  }
+  button {
+    font-size: 15px;
+    padding: 5px;
+    width: 100px;
+    font-weight: 900;
+  }
+  .social_media li {
+    display: block;
+  }
+
+  .social_media {
+    width: 100%;
+  }
 }
